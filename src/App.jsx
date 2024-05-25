@@ -8,7 +8,7 @@ import axios from 'axios'
 function App() {
   const [count, setCount] = useState(0)
   const getData = () => {
-    axios.get('http://localhost:2025/products').then(res=>{
+    axios.get('https://aspnetcoreweb-api.de.r.appspot.com/api/product').then(res=>{
       console.log(res)
     }).catch(err=>{
       console.log(err)
