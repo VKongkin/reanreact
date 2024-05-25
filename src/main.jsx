@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
 import ContactMe from './ContactMe';
+import App from './App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <App/>
     <Router>
       <nav>
         <Link to="/">Home</Link>
